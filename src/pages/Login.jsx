@@ -111,8 +111,7 @@ const Login = () => {
           <Links style={{color: "#12b7f8"}} >CREATE A NEW ACCOUNT</Links>
           </Link>
         </Form>
-        <p style={{ margin: "1em", fontSize: ".9rem", color: "black" }}>Sample Login</p>
-        <p style={{ margin: "1em", fontSize: ".9rem", color: "black" }}>Username: stark , Password: stark</p>
+        
       </Wrapper>
     </Container>
   );
