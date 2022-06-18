@@ -90,22 +90,21 @@ const Register = () => {
   };
   return (
     <Container style={{backgroundImage:"url(https://img.freepik.com/free-photo/omni-channel-technology-online-retail-business_31965-3010.jpg?w=2000)"}}>
-      <Wrapper style={{background:"#fffffffa",position:"absolute",right:"10%"}}>
+      <Wrapper style={{background:"#fffffffa",position:"absolute",right:"10%",width:"30%"}}>
         <Title style={{color:"#000"}}>CREATE AN ACCOUNT</Title>
         <Form onSubmit={handleSubmit}>
-          <Input placeholder="Username" onChange={(e) => setUsername(e.target.value)} style={{background:"#fff",color:"#000"}} />
-          <Input type="email" placeholder="E-Mail" onChange={(e) => setEmail(e.target.value)} style={{background:"#fff",color:"#000"}} />
-          <Input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} style={{background:"#fff",color:"#000"}} />
+          <Input placeholder="Username" onChange={(e) => setUsername(e.target.value)} style={{background:"#fff",color:"#000",flex:"none",width:"95%"}} />
+          <Input type="email" placeholder="E-Mail" onChange={(e) => setEmail(e.target.value)} style={{background:"#fff",color:"#000",flex:"none",width:"95%"}} />
+          <Input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} style={{background:"#fff",color:"#000",flex:"none",width:"95%"}} />
           <Agreement style={{color:"#000"}}>
-            By creating an account, I consent to the processing of my personal
-            data in accordance with the <b>PRIVACY POLICY</b>
+           
             <br/>
             <br/>
           <Link to="/login">
           <Links style={{bottom:"19px",marginTop:"20px", color: "#12b7f8",position:"absolute",right:"57px"}}>Already, Have an Account?</Links>
           </Link>
           </Agreement>
-          <Button type="submit" style={{borderRadius:"5px"}}>CREATE</Button>
+          <Button type="submit" style={{borderRadius:"5px",margin:"30px 0 0 0"}}>CREATE</Button>
           {error && <span style={{color:"red", marginTop:"30px"}}>Something went wrong!</span>}
         </Form>
       </Wrapper>

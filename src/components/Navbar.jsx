@@ -63,7 +63,7 @@ const Navbar = () => {
       <Wrapper>
         <Left>
           <Link to="/" style={{ textDecoration: 'none'}}>
-          <Logo>SHOPY.</Logo>
+          <Logo>HAPPY SHOPPING</Logo>
           </Link>
         </Left>
         <Right>
